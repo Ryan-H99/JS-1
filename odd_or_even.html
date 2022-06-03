@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Question 3b</title>
+</head>
+<body>
+    <h1>Odd or Even?</h1>
+    <p>Type a number and I will tell you if it is odd or even.</p>
+
+    <input type="number" id="num">
+    <button onclick="bigNum(document.getElementById('num').value)">Submit</button>
+
+    <p id="answer"></p>
+
+    <script>
+        function bigNum(num) {
+            if (num % 2 == 0) {
+                document.getElementById("answer").innerHTML = num + " is an even number";
+            } else if (num % 2 == 1) {
+                document.getElementById("answer").innerHTML = num + " is an odd number";
+            } else {
+                document.getElementById("answer").innerHTML = "error";
+            }
+        }
+    </script>
+</body>
+
+</html>

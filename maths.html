@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Question 2</title>
+    
+</head>
+
+<body>
+    <p id="q1"></p>
+    <p id="q2"></p>
+    <p id="q3"></p>
+
+    <script>
+        //diagonal of square with side 9
+        let l = 9;
+        let h = 9;
+        let d = ((l ** 2) + (h ** 2)) ** 0.5;
+        console.log(d);
+        document.getElementById("q1").innerHTML = d;
+
+        //area of triangle with length 5,6,7
+        let a = 5;
+        let b = 6;
+        let c = 7;
+        let s = (a + b + c) / 2;
+        let area = (s * (s - a) * (s - b) * (s - c)) ** 0.5;
+        console.log(area);
+        document.getElementById("q2").innerHTML = area;
+
+        //circumfrence of circle radius 4
+        let r = 4;
+        const pi = 3.14;
+        let circumf = 2 * pi * 4;
+        console.log(circumf);
+        document.getElementById("q3").innerHTML = circumf;
+    </script>
+    
+</body>
+
+</html>

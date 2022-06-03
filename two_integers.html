@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Questino 3a</title>
+</head>
+
+<body>
+    <h1>Which number is bigger?</h1>
+    <p>Type two numbers and I will tell you which is bigger</p>
+  
+    <input type="number" id="num1">
+    <input type="number" id="num2">
+    <button onclick="bigNum(document.getElementById('num1').value,document.getElementById('num2').value)">Submit</button>
+    
+    <p id="answer"></p>
+
+    <script>
+      function bigNum(num1, num2) {
+        if (num1 > num2) {
+            document.getElementById("answer").innerHTML = "The bigger number is " + num1;
+        } else if (num2 > num1) {
+            document.getElementById("answer").innerHTML = "The bigger number is " + num2;
+        } else if (num1 == num2) {
+            document.getElementById("answer").innerHTML = "Both numbers are equal";
+        } else {
+            document.getElementById("answer").innerHTML = "error";
+        }
+    }
+    </script>
+  </body>
+
+</html>
